@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+
+/* styles.css is the ONLY css file which directly affects _all_ child components! */
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background-color: rgb(243, 234, 226);
+}
+
+p {
+  /* So this also styles _all_ <p> elements inside of _every_ component! */
+  font-size: 1.1em;
+}

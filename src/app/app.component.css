@@ -1,0 +1,56 @@
+/*
+Styles from one component can never affect other components.
+For example this main component's styles don't affect anything inside of the "card" component!
+
+There is just one possibility to select the parent element of a component from within the child. It's by using ":host" as seen below, which selects "<app-root>" in this case.
+For details see https://developer.mozilla.org/en-US/docs/Web/CSS/:host
+*/
+
+:host {
+  font-weight: bold;
+  color: #303030;
+}
+
+.container {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+p {
+  /* This will only apply to a <p> placed *outside* of every _child_ component!
+  So it will style only directly the main "app" component. */
+  color: teal;
+}
+
+h1 {
+  text-shadow: 3px 2px 5px darkgrey;
+  color: teal;
+}
+
+h2 {
+  color: green;
+}
+
+input#user-input {
+  caret-color: green;
+}
+
+figure {
+  color: rgb(83, 83, 83);
+}
+
+footer {
+  font-size: small;
+  text-shadow: 1px 1px 3px darkgrey;
+}
+
+.wrong {
+  color: white;
+  background-color: rgb(255, 69, 69);
+}
+
+.correct {
+  color: white;
+  background-color: limegreen;
+}
