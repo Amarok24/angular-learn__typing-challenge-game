@@ -15,6 +15,7 @@ For details see https://developer.mozilla.org/en-US/docs/Web/CSS/:host
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
   line-height: 1.4;
+  max-width: 640px;
 }
 
 p {

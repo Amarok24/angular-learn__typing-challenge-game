@@ -8,8 +8,8 @@ export { AppModule };
 
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
-class AppModule {}
+class AppModule { }

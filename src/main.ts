@@ -8,7 +8,8 @@ import { AppModule } from './app/app.module';
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
-  .then((ref) => {
+  .then((ref) =>
+  {
     // Ensure Angular destroys itself on hot reloads.
 
     // My note: this is not an Angular code, it's only used in StackBlitz!!!
@@ -17,7 +18,8 @@ platformBrowserDynamic()
     // See also https://www.typescriptlang.org/tsconfig#suppressImplicitAnyIndexErrors
 
     // @ts-ignore
-    if (window['ngRef']) {
+    if (window['ngRef'])
+    {
       // @ts-ignore
       window['ngRef'].destroy();
     }

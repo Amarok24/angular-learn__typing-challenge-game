@@ -1,9 +1,7 @@
-
 import { Component, VERSION, OnInit } from '@angular/core';
 import { LoremIpsum } from 'lorem-ipsum';
 
 export { AppComponent };
-
 
 type validCssClassName = 'correct' | 'wrong' | '';
 
@@ -29,9 +27,9 @@ class AppComponent implements OnInit
     console.log('AppComponent constructor');
 
     this.lorem = new LoremIpsum(
-    {
-      wordsPerSentence: { min: 3, max: 5 },
-    });
+      {
+        wordsPerSentence: { min: 3, max: 5 },
+      });
   }
 
 
@@ -58,7 +56,7 @@ class AppComponent implements OnInit
   onKeyDown(kEvent: KeyboardEvent): void 
   {
     // https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
-    if ( this.textMatches() && (kEvent.key === 'Enter') )
+    if (this.textMatches() && (kEvent.key === 'Enter'))
     {
       console.log('restarting...');
       this.startChallenge();
@@ -70,7 +68,7 @@ class AppComponent implements OnInit
   {
     const input = et as HTMLInputElement;
     this.userText = input.value;
-    console.log( this.userText );
+    console.log(this.userText);
   }
 
 
