@@ -1,12 +1,13 @@
 /*
 Styles from one component can never affect other components.
-For example this main component's styles don't affect anything inside of the "card" component!
+They also don't affect the main index.html in general.
 
-There is just one possibility to select the parent element of a component from within the child. It's by using ":host" as seen below, which selects "<app-root>" in this case.
+There is just one possibility to select the host element of a component (that's always the "selector" in component decorator). It works by using ":host" as seen below, which selects "<app-root>" in this case.
 For details see https://developer.mozilla.org/en-US/docs/Web/CSS/:host
 */
 
 :host {
+  /* Formats the app-root element in this case. */
   font-weight: bold;
   color: #303030;
 }
